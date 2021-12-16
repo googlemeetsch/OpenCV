@@ -53,7 +53,7 @@ while True:
             name = knownNames[minIdx]
             if lock[name] is False:
                 lock[name] = True
-                print(name, lock[name])
+                print(lock)
             y1, x2, y2, x1 = facePos
             y1, x2, y2, x1 = y1 * 4, x2 * 4, y2 * 4, x1 * 4
             cv2.rectangle(img, (x1, y1), (x2, y2), (0, 255, 0), 2)
